@@ -11,6 +11,8 @@ function Search() {
         useEffect(() => {
         if (searchTerm) {
             searchMovies();
+        } else {
+            setMovies([]);
         }
     }, [searchTerm]);
 
@@ -40,7 +42,7 @@ function Search() {
                         <p className="text-sm text-gray-500 mt-1">Just type a movie title into the box above, and we'll take it from there.</p>
                         </div>
                         ) : (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
                         {movies.map((movie) => (
                             <MovieCard key={movie.id} movie={movie} id={movie.id} title={movie.title} poster={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} rating={movie.vote_average} />
                         ))}

@@ -8,7 +8,7 @@ function MovieCard({ id, title, poster, rating, movie }) {
 
     return (
         <>
-            <div className="bg-gray-800 border border-gray-700 rounded-lg shadow-sm max-w-sm transition-transform hover:scale-105">
+            <div className=" w-full  bg-gray-800 border border-gray-700 rounded-lg shadow-sm max-w-xs transition-transform hover:scale-105 overflow-hidden">
                 <Link to={`/movie/${id}`}>
                 <img className="rounded-t-lg w-full h-80 object-cover" src={poster} alt={title} />
                 </Link>
@@ -25,7 +25,7 @@ function MovieCard({ id, title, poster, rating, movie }) {
                         </Link>
                         <button className="bg-gray-700 hover:bg-gray-600 text-white px-3 py-2 rounded-lg text-base transition-colors"
                             onClick={() => addToFavorites(movie || { id, title, poster, rating })}
-                            title="Add to Favorites"
+                            title={isFavorite ? "Remove from Favorites": "Add to Favorites"}
                         >
                             {isFavorite ? '❤️' : '🤍'}
                         </button> 
