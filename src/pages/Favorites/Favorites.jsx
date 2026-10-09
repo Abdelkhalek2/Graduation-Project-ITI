@@ -16,7 +16,7 @@ function Favorites() {
                         <div className= "flex flex-col items-center justify-center py-20 text-gray-500">
                             <span className= "text-6xl mb-4">💔</span>
                             <h2 className= "text-3xl font-bold mb-8 border-blue-600 pl-4">No Favorite Movies</h2>
-                            <p className= "text-xl">Click the heart icon on any movie to add it to your favorites.</p>
+                            <p className= "text-xl text-center">Click the heart icon on any movie to add it to your favorites.</p>
                         </div>
                     ) : (
                         <div className= "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">

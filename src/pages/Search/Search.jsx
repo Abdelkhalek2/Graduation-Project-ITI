@@ -39,7 +39,7 @@ function Search() {
                         <div className="flex flex-col items-center justify-center py-20 text-gray-500">
                         <span className="text-6xl mb-4">🔍</span>
                         <h3 className="text-xl font-medium text-gray-300">Looking for your next movie?</h3>
-                        <p className="text-sm text-gray-500 mt-1">Just type a movie title into the box above, and we'll take it from there.</p>
+                        <p className="text-sm text-gray-500 mt-1 text-center">Just type a movie title into the box above, and we'll take it from there.</p>
                         </div>
                         ) : (
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
