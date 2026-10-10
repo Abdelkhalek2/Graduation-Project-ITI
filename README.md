@@ -1,16 +1,57 @@
-# React + Vite
+# Movies Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive movie discovery web application built with React, Tailwind Css. It fetches movies data from TMDB API, allowing users to browse trending movies, search for specific titles, and save their favorites.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Live link: [Click Here](https://graduation-project-iti-three.vercel.app) 
 
-## React Compiler
+## Screenshots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Home Page
+![Home Page](./screenshots/home.png)
 
-## Expanding the ESLint configuration
+### Movie Details
+![Movie Details](./screenshots/details.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Search Page
+![Search Page](./screenshots/search.png)
+
+### Favorites Page
+![Favorites Page](./screenshots/favorites.png)
+
+## Features
+
+- Display weekly trending movies from TMDB
+- Search movies by title
+- View movie details (rating, poster, and overview)
+- Add/Remove movies from Favorites with localeStorage support.
+- Fully responsive design with mobile menu.
+- Auto scroll to top when navigating between pages
+
+## Technologies Used
+
+- React (Vite)
+- Tailwind CSS
+- React Router DOM
+- Axios
+- TMDB API
+
+## How to run the project
+
+1. Clone the repo:
+```bash
+git clone https://github.com/Abdelkhalek2/Graduation-Project-ITI.git 
+```
+2. Go to the project folder:
+cd Graduation-Project-ITI
+
+3. Install dependencies:
+npm install
+
+4. Run the development server:
+npm run dev 
+
+5. Open your browser at:
+http://localhost:5173
+
